@@ -42,14 +42,14 @@ timer1 = setInterval("textFunc()", 150); // every 150 milliseconds
 // ========================== fireworks =================================================
 $(function() {
     var canvas = $('#canvas')[0];
-    canvas.width = $(window).width();
-    canvas.height = $(window).height();
+    canvas.width = $('main').width();
+    canvas.height = $('main').height();
     var ctx = canvas.getContext('2d');
 
     // resize
     $(window).on('resize', function() {
-        canvas.width = $(window).width();
-        canvas.height = $(window).height();
+        canvas.width = $('main').width();
+        canvas.height = $('main').height();
         ctx.fillStyle = '#000';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
     });

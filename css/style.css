@@ -2,13 +2,24 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
+header {
+    margin-left: 30%;
+    margin-top: 10%;
+    position: fixed;
+}
+
 h1 {
     color: rgb(255, 255, 255);
-    margin-top: 250px;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
 }
 
-canvas {
+.main {
+    width: 1000px;
+    height: 250px;
+}
+
+#canvas {
     display: block;
+    align-items: center;
 }
